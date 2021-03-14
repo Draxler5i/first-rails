@@ -1,0 +1,17 @@
+<h1><%= @user.name %></h1>
+<h2><%= @user.lastName %></h2>
+
+<ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Edit", edit_user_path(@user) %></li>
+    <li><%= link_to "Destroy", user_path(@user),
+        method: :delete,
+        data: { confirm: "Are you sure?" } %></li>
+</ul>
+
+
+<h2>Tasks</h2>
+<%= render @user.tasks %>
+
+<h2>Add a task:</h2>
+<%= render 'tasks/form' %>
