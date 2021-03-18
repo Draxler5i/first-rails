@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# About the project
+This is a project to create CRUD to users. Each user has many tasks
